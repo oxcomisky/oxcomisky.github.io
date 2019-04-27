@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript">
+        onload = function () {
+            document.getElementById("lastModified").innerHTML = "Last Updated: " + document.lastModified.split(" ")[0];
+        }
+    </script>
+
     <title>About Us</title>
+
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>Contact Information</h1>
-        </div>
-    </header>
+
+    <h1>Contact Us</h1>
 
     <nav>
 
@@ -20,70 +26,52 @@
         <a href="about.html">About Us</a>
 
     </nav>
+
+    <div class="container">
+
+        <form action="/action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <br><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <br><br>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <br><br>
+
+            <label for="subject">Subject:</label>
+            <br>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:195px"></textarea>
+            <img src="images/mail.jpg" alt="related photo" hspace="20" title="mail" />
+
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <br><span id="lastModified"></span>
+        <br>
+        <p>&copy; 2019 (Our website name....).com<p>
+
+    </div>
+
 </body>
-
-</html>
-<html>
-	
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<script type="text/javascript">
-		onload = function(){
-		document.getElementById("lastModified").innerHTML = "Last Updated: " + document.lastModified.split(" ")[0];
-}
-</script>
-		
-	</head>
-	
-	<body>
-
-		<h1>Contact Us</h1>
-
-		<div class="container">
-			
-			<form action="/action_page.php">
-				
-				<label for="fname">First Name</label>
-				<input type="text" id="fname" name="firstname" placeholder="Your name..">
-				
-				<br><br>
-				
-				<label for="lname">Last Name</label>
-				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-				
-				<br><br>
-				
-				<label for="country">Country</label>
-				<select id="country" name="country">
-					<option value="australia">Australia</option>
-					<option value="canada">Canada</option>
-					<option value="usa">USA</option>
-				</select>
-				
-				<br><br>
-				
-				<label for="subject">Subject:</label>
-				<br>
-				<textarea id="subject" name="subject" placeholder="Write something.." style="height:195px"></textarea>
-				<img src="images/mail.jpg" alt="related photo" hspace="20" title="mail"/>
-
-				<br><br>
-				
-				<label for="email">Email</label>
-				<input type="text" id="email" name="email" placeholder="Your email..">
-				
-				<br><br>
-
-				<input type="submit" value="Submit">
-
-			</form>
-			
-			<br><span id="lastModified"></span>
-			<br><p>&copy; 2019 (Our website name....).com<p>
-			
-		</div>
-
-	</body>
 
 </html>
