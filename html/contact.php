@@ -31,26 +31,26 @@
 
     <div class="container">
 
-        <form action="/action_page.php">
+        <form action="contactform.php" method="POST">
 
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name..">
-
-            <br><br>
-
-            <label for="subject">Message:</label>
-            <br>
-            <textarea id="subject" name="subject" placeholder="Tell us something.." style="height:195px"></textarea>
-            <img src="../images/mail.jpg" alt="related photo" hspace="20" title="mail" />
+            <input type="text" name="name" placeholder="Your name..">
 
             <br><br>
 
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
+            <input type="text" name="email" placeholder="Your email..">
 
             <br><br>
 
-            <input type="submit" value="Submit">
+            <label for="message">Message:</label>
+            <br>
+            <textarea name="message" placeholder="Tell us something.." style="height:195px"></textarea>
+            <img src="../images/mail.jpg" alt="related photo" hspace="20" title="mail" />
+
+            <br><br>
+
+            <button type="submit" name="submit">Submit</button>
 
         </form>
 
