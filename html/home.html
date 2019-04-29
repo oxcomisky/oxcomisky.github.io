@@ -2,6 +2,12 @@
 
 <head>
     <title>Corporate Crime</title>
+
+    <script type="text/javascript">
+        onload = function () {
+            document.getElementById("lastModified").innerHTML = "Last Updated: " + document.lastModified.split(" ")[0];
+        }
+    </script>
 </head>
 
 <body>
@@ -19,6 +25,12 @@
         <a href="about.html">Contact Us</a>
 
     </nav>
+
+    <footer>
+        <br><span id="lastModified"></span>
+        <br>
+        <p>&copy; 2019 (Our website name....).com<p>
+    </footer>
 
 </body>
 

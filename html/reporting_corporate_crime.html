@@ -3,6 +3,12 @@
 	
 	<head>
 		<title>Reporting Corporate Crime</title>
+
+		<script type="text/javascript">
+			onload = function () {
+				document.getElementById("lastModified").innerHTML = "Last Updated: " + document.lastModified.split(" ")[0];
+			}
+		</script>
 	</head>
 	
 	<body>
@@ -12,7 +18,12 @@
 			<h1>Reporting Corporate Crime</h1>
 
 			<nav>
-				<p><a href="#">Main Portal</a>
+
+				<a href="types_of_corporate_crime.html">Types of Corporate Crime</a>
+				<a href="examples_of_corporate_crime.html">Examples of Corporate Crime</a>
+				<a href="reporting_corporate_crime.html">Reporting Corporate Crime</a>
+				<a href="about.html">Contact Us</a>
+		
 			</nav>
 		
 		</header>
@@ -71,6 +82,12 @@
 			</section>
 			
 		</main>
+
+		<footer>
+			<br><span id="lastModified"></span>
+			<br>
+			<p>&copy; 2019 (Our website name....).com<p>
+		</footer>
 		
 	</body>
 
